@@ -1,49 +1,116 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Travelers</title>
-    </head>
-    <body>
-        <header id="title" style="text-align:center;"> 
-            <div class="header-area">
-                <h1>Travelers</h1> 
-                
-             
-                    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelers</title>
+</head>
+
+<body>
+
+    <header id="title" style="text-align:left;">
+        <div class="header-area">
+            <div id="logo">
+
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a class="nav-item" href="#About">About</a>
-                    </li>
-                    <li>
-                        <a class="nav-item" href="#Hotels">Hotels</a>
-                    </li>
-                    <li>
-                        <a class="nav-item" href="#Activities">Activities</a>
-                    </li>
-                    <li>
-                        <a class="nav-item" href="#Dining">Dining</a>
-                    </li>
-                    <li>
-                        <a class="nav-item" href="#Entertainment">Entertainment</a>
-                    </li>
-                    <li>
-                        <a class="nav-item" href="#Beauty and Style">Beauty and Style</a>
-                    </li>
-                </ul>
-            </nav>
+            <h1>Travelers</h1>
 
 
-    
-    
-        </header>
-    
-        
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a class="nav-item" href="#Home">Home</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#About">About</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#Contact Us">Find Us</a>
+                </li>
 
-        <script src="./assets/js/script.js"></script>  
-    </body>
-    </html>
+            </ul>
+        </nav>
+
+        <!-- style notes - nav options should be in-line , aligned to the right, background color - solid -->
+    </header>
+
+
+    <section class="searchBar">
+
+
+        <h2> Search bar </h2>
+
+        <p> Select Your Destination</p>
+        <input type="text" id="citySearch" />
+        <button type="button" id="searchButton">Search</button>
+        <p> What would you like to do?</p>
+        <input type="text" id="activity" />
+        <button type="button" id="searchButton">Search</button>
+
+        <!-- Style notes: all boxes should be in-line -->
+
+
+    </section>
+
+
+
+    <section class="hotelSelection">
+
+        <!-- suggested image for background - format to make smaller and probably more square - make it inline with search for Hotels below-->
+        <img class="image" src="./assets/images/norway-24.jpg" alt="sea harbor" width="300" height="200">
+
+        <h2> Hotel</h2>
+        <!-- add bottom border to separate from search button -->
+
+        <p> Select Your Destination</p>
+        <input type="text" id="hotelSearch" />
+        <button type="button" id="searchButton">Find me a place</button>
+
+    </section>
+
+
+    <section class="shoppingSelection">
+
+        <h2> Shopping</h2>
+
+        <input type="text" id="activity" />
+        <button type="button" id="searchButton">Find me a place</button>
+
+
+        <!-- suggested image for background - format to make smaller and probably more square - make it inline with search for Hotels below-->
+
+
+
+    </section>
+
+    <section id="searchResults">
+        <h2> Search Results </h2>
+        <div>
+            <p>Search results show up here</p>
+        </div>
+
+
+
+    </section>
+
+
+
+    <section class=Footer>
+
+        <h2> Find us at: </h2>
+
+        <p> travelers@traveler.com p: 888-333-4422 123 MAIN STREET NY, NY 012345</p>
+        <!-- style notes : solid color background, text aligned to left  -->
+
+    </section>
+
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
