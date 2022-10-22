@@ -149,10 +149,12 @@
             <!-- Right slide -->
             <div class="nav evel-right">
                 <p class="adventureSearch is-5">
-                    <h1 class="title">Find your adventure</h1>
-                    <input type="text" id="eventSearch" />
-                    <button type="button" id="eventSearchButton">Search</button>
-                    </p>
+                    <h1 class="title">Find the weather</h1>
+                    <input type="text" id="city-input" />
+                    <button type="button" id="weatherSearchButton" onclick="searchWeather()">Search</button>
+                 </p>
+                 <h2> Search Results </h2>
+                 <section id="eventSearchResults"></section>
             </div>
                 
 
@@ -178,10 +180,7 @@
         <!-- style notes : solid color background, text aligned to left  -->
 
     </section>
-
-
-
-
+    <script src="./assets/js/weather.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
