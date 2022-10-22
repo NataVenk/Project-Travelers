@@ -114,7 +114,7 @@ clearEl.addEventListener("click", function () {
 });
 
 function renderSearchHistory() {
-  historyEl.innerHTML = "";
+  historyEl.innerHTML = ' ';
   for (let i = 0; i < searchHistory.length; i++) {
     const historyItem = document.createElement("input");
     // <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com"></input>
