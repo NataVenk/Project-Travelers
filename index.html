@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="Assets/css/style.css">
         <title>Travelers</title>
     </head>
     <body>
@@ -36,14 +38,24 @@
                     </li>
                 </ul>
             </nav>
-
+            <!-- Hotel Search Bar -->
+            <div class="flex justify-center" id="hotelSearch">
+                <div class="mb-3 xl:w-96">
+                  <div class="input-group relative flex flex-wrap items-stretch w-full mb-4">
+                    <input type="search" class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="searchInput" placeholder="Search" aria-label="Search" aria-describedby="button-addon3">
+                    <input type="search" class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="locationInput" placeholder="Location" aria-label="Location" aria-describedby="button-addon3">
+                    <button class="btn inline-block px-6 py-2 border-2 border-blue-600 text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" type="button" id="button-addon3">Search</button>
+                  </div>
+                </div>
+            </div>
+        
 
     
     
         </header>
     
         
-
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <script src="./assets/js/script.js"></script>  
     </body>
     </html>
