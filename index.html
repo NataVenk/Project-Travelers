@@ -9,7 +9,7 @@
 
     <link href="Assets/css/style.css" rel="stylesheet" />
 
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <title>Travelers</title>
 </head>
@@ -113,8 +113,8 @@
                 <div class="level-item">
                     <p class="hotelSearch is-5">
                     <h1 class="title">Hotel Search</h1>
-                    <input type="text" id="citySearch" />
-                    <button type="button" id="searchButton">Search</button>
+                    <input type="text" id="hotelZipcode" />
+                    <button type="button" id="searchButton" onclick="searchHotel()">Search</button>
                     </p>
                 </div>
 
@@ -176,15 +176,8 @@
 
     
 
-    <section id="searchResults">
-        <h2> Search Results </h2>
-        <div>
-            <p>Search results show up here</p>
-        </div>
-
-
-
-    </section>
+    <h2> Search Results </h2>
+    <section id="searchResults"></section>
 
 
 
