@@ -1,42 +1,50 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="Assets/css/style.css">
-        <title>Travelers</title>
-    </head>
-    <body>
-        <header id="title" style="text-align:center;"> 
-            <div class="header-area">
-                <h1>Travelers</h1> 
-                
-             
-                    
-            </div>
-            <nav>
-                <ul>
-                    <li>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <link href="Assets/css/style.css" rel="stylesheet" />
+
+
+
+    <title>Travelers</title>
+</head>
+
+<body>
+
+
+    <header id="title" style="text-align:left;">
+        <section class="title block is-large">
+            <nav class="level">
+                <!-- Left side -->
+                <div class="header-area level-left">
+                    <div id="logo">
+                        <img class="logo" src="./assets/images/Travelers-leaf.png" alt="globe" width="200" height="200">
+
+
+                    </div>
+                    <h1 id="logoLetters">Travelers</h1>
+
+
+                </div>
+
+                </div>
+
+                <!-- Right side -->
+                <div class="level-right">
+                    <div class="field has-addons">
+                        <a class="nav-item" href="#Home">Home</a>
                         <a class="nav-item" href="#About">About</a>
-                    </li>
-                    <li>
-                        <a class="nav-item" href="#Hotels">Hotels</a>
-                    </li>
-                    <li>
-                        <a class="nav-item" href="#Activities">Activities</a>
-                    </li>
-                    <li>
-                        <a class="nav-item" href="#Dining">Dining</a>
-                    </li>
-                    <li>
-                        <a class="nav-item" href="#Entertainment">Entertainment</a>
-                    </li>
-                    <li>
-                        <a class="nav-item" href="#Beauty and Style">Beauty and Style</a>
-                    </li>
-                </ul>
+                        <a class="nav-item" href="#Contact Us">Find Us</a>
+
+
+
+                    </div>
+
             </nav>
             <!-- Hotel Search Bar -->
             <div class="flex justify-center" id="hotelSearch">
@@ -50,12 +58,148 @@
             </div>
         
 
-    
-    
-        </header>
-    
+        </section>
+
+
         
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-        <script src="./assets/js/script.js"></script>  
-    </body>
-    </html>
+
+        <!-- style notes - nav options should be in-line , aligned to the right, background color - solid -->
+    </header>
+
+
+
+    <section class="searchBar block is-large">
+        <nav class="level">
+            <!-- Left side -->
+            <div class="level-left">
+                <div class="level-item">
+                    <p class="searchBar is-5">
+                    <h1 class="title">Search Bar</h1>
+                    </p>
+                </div>
+
+            </div>
+            </div>
+
+            <!-- Right slide -->
+            <div class="nav evel-right">
+                <div class="field has-addons">
+                    <p> </p> <strong>Destination</strong>
+                    <input type="text" id="citySearch" />
+                    <button type="button" id="searchButton">Search</button>
+
+                    <p> </p> <strong>Activity</strong>
+                    <input type="text" id="activity" />
+                    <button type="button" id="searchButton">Search</button>
+
+                </div>
+
+        </nav>
+
+
+    </section>
+    <section id="missionState">
+        <div class="block">
+            <p></p>write a  <strong>mission statement</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.</p>
+          </div>
+
+    </section>
+    
+
+    <section class="hotelSearch block is-large">
+        <nav class="level">
+            <!-- Left side -->
+            <div class="level-left">
+                <div class="level-item">
+                    <p class="hotelSearch is-5">
+                    <h1 class="title">Hotel Search</h1>
+                    <input type="text" id="citySearch" />
+                    <button type="button" id="searchButton">Search</button>
+                    </p>
+                </div>
+
+            </div>
+            </div>
+
+            <!-- Right slide -->
+            <div class="nav evel-right">
+                <div class="field has-addons">
+                    <div id="logo">
+                        <img class="logo" src="./assets/images/norway-24.jpg" alt="harbor" width="200" height="200">
+
+
+                    </div>
+
+                </div>
+
+        </nav>
+
+
+    </section>
+
+    <section class="adventurSearch block is-large">
+        <nav class="level">
+            <!-- Left side -->
+            <div class="level-left">
+                <div class="level-item">
+                    <div class="field has-addons">
+                        <div id="logo">
+                            <img class="logo" src="./assets/images/milan-shop.png" alt="shopping" width="200" height="200">
+                        </div>
+    
+                    </div>
+    
+
+                   
+                </div>
+
+            </div>
+            </div>
+
+            <!-- Right slide -->
+            <div class="nav evel-right">
+                <p class="adventureSearch is-5">
+                    <h1 class="title">Find your adventure</h1>
+                    <input type="text" id="adventSearch" />
+                    <button type="button" id="searchButton">Search</button>
+                    </p>
+            </div>
+                
+
+        </nav>
+
+
+    </section>
+    
+
+
+    
+
+    <section id="searchResults">
+        <h2> Search Results </h2>
+        <div>
+            <p>Search results show up here</p>
+        </div>
+
+
+
+    </section>
+
+
+
+    <section class=Footer>
+
+        <h2> Find us at: </h2>
+
+        <p> travelers@traveler.com p: 888-333-4422 123 MAIN STREET NY, NY 012345</p>
+        <!-- style notes : solid color background, text aligned to left  -->
+
+    </section>
+
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
