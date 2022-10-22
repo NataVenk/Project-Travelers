@@ -13,18 +13,25 @@
 
     <link href="Assets/css/style.css" rel="stylesheet" />
 
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <title>Travelers</title>
 </head>
 
 <body>
 
-    <header>
-        <span class="icon">
-            <i class="fas fa-home">LOGO HERE</i>
-        </span>
-        <h1>Travelers</h1>
+
+    <header id="title" style="text-align:left;">
+        <section class="title block is-large">
+            <nav class="level">
+                <!-- Left side -->
+                <div class="header-area level-left">
+                    <div id="logo">
+                        <img class="logo" src="./assets/images/Travelers-leaf.png" alt="globe" width="200" height="200">
+
+
+                    </div>
+                    <h1 id="logoLetters">Travelers</h1>
 
     </header>
 
@@ -44,10 +51,17 @@
         </ul>
     </nav>
 
+
+        </section>
+
+
+        
+
     <!-- style notes - nav options should be in-line , aligned to the right, background color - solid -->
     </header>
     <div class="picContainer">
 
+            </figure>
 
         <section>
 
@@ -57,65 +71,123 @@
 
             </figure>
 
-        </section>
-    </div>
     <section class="searchBar">
 
+    <section class="searchBar block is-large">
+        <nav class="level">
+            <!-- Left side -->
+            <div class="level-left">
+                <div class="level-item">
+                    <p class="searchBar is-5">
+                    <h1 class="title">Search Bar</h1>
+                    </p>
+                </div>
 
-        <h2> Search bar </h2>
+            </div>
+            </div>
 
-        <p> Select Your Destination</p>
-        <input type="text" id="citySearch" />
-        <button type="button" id="searchButton">Search</button>
-        <p> What would you like to do?</p>
-        <input type="text" id="activity" />
-        <button type="button" id="searchButton">Search</button>
+            <!-- Right slide -->
+            <div class="nav evel-right">
+                <div class="field has-addons">
+                    <p> </p> <strong>Destination</strong>
+                    <input type="text" id="citySearch" />
+                    <button type="button" id="searchButton">Search</button>
 
-        <!-- Style notes: all boxes should be in-line -->
+                    <p> </p> <strong>Activity</strong>
+                    <input type="text" id="activity" />
+                    <button type="button" id="searchButton">Search</button>
+
+                </div>
+
+        </nav>
+
+
+    </section>
+    <section id="missionState">
+        <div class="block">
+            <p></p>write a  <strong>mission statement</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.</p>
+          </div>
+
+    </section>
+    
+
+    <section class="hotelSearch block is-large">
+        <nav class="level">
+            <!-- Left side -->
+            <div class="level-left">
+                <div class="level-item">
+                    <p class="hotelSearch is-5">
+                    <h1 class="title">Hotel Search</h1>
+                    <input type="text" id="hotelZipcode" />
+                    <button type="button" id="searchButton" onclick="searchHotel()">Search</button>
+                    </p>
+                </div>
+
+            </div>
+            </div>
+
+            <!-- Right slide -->
+            <div class="nav evel-right">
+                <div class="field has-addons">
+                    <div id="logo">
+                        <img class="logo" src="./assets/images/norway-24.jpg" alt="harbor" width="200" height="200">
+
+
+                    </div>
+
+                </div>
+
+        </nav>
 
 
     </section>
 
+    <section class="adventurSearch block is-large">
+        <nav class="level">
+            <!-- Left side -->
+            <div class="level-left">
+                <div class="level-item">
+                    <div class="field has-addons">
+                        <div id="logo">
+                            <img class="logo" src="./assets/images/milan-shop.png" alt="shopping" width="200" height="200">
+                        </div>
+    
+                    </div>
+    
 
+                   
+                </div>
 
-    <section class="hotelSelection">
+            </div>
+            </div>
 
-        <!-- suggested image for background - format to make smaller and probably more square - make it inline with search for Hotels below-->
-        <img class="image" src="./assets/images/norway-24.jpg" alt="sea harbor" width="300" height="200">
+            <!-- Right slide -->      
+        <div class="nav evel-right">
+            <div>
+                <h1 class="title">Find the weather</h1>
+                <div>
+                    <input type="text" id="city-input" />                    
+                    <div class="input-group-append">
+                        <button type="button" id="weatherSearchButton">Search</button>
+                    </div>
+                </div>
+                <button type="button" id="clear-history">Clear history</button>
+                <form id="history"></form>
+            </div>
+            <span id="city-name" class="city-name"></span>
+            <p id="temperature"></p>
 
-        <h2> Hotel</h2>
-        <!-- add bottom border to separate from search button -->
+        </nav>
 
-        <p> Select Your Destination</p>
-        <input type="text" id="hotelSearch" />
-        <button type="button" id="searchButton">Find me a place</button>
 
     </section>
+    
 
 
-    <section class="shoppingSelection">
+    
 
-        <h2> Shopping</h2>
-
-        <input type="text" id="activity" />
-        <button type="button" id="searchButton">Find me a place</button>
-
-
-        <!-- suggested image for background - format to make smaller and probably more square - make it inline with search for Hotels below-->
-
-
-
-    </section>
-
-    <section id="searchResults">
-        <h2> Search Results </h2>
-        <div>
-            <p>Search results show up here</p>
-        </div>
-
-
-
-    </section>
+    <h2> Search Results </h2>
+    <section id="searchResults"></section>
 
 
 
@@ -127,10 +199,7 @@
         <!-- style notes : solid color background, text aligned to left  -->
 
     </section>
-
-
-
-
+    <script src="./assets/js/weather.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
