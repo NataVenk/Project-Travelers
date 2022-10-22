@@ -1,3 +1,17 @@
 body{
-    background-color: aquamarine;
+    background-color:  #ffffff ;
+}
+
+/* #486572; - color of the globe */
+h1{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 65px;
+    color:  #486572; 
+} 
+.nav{
+    justify-content: center;
+}
+.seacrhBar{
+    display: flex;
+    justify-content: space-around;
 }
