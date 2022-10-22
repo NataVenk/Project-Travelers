@@ -7,8 +7,6 @@ const nameEl = document.getElementById("city-name");
 const currentPicEl = document.getElementById("current-pic");
 ("");
 const currentTempEl = document.getElementById("temperature");
-const currentHumidityEl = document.getElementById("humidity");
-const currentWindEl = document.getElementById("wind-speed");
 const historyEl = document.getElementById("history");
 let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
 var apiKey = "b7b48ac454a09b19bb30a881b0b84d9d";
@@ -33,11 +31,9 @@ function getWeather(cityName) {
       var day = date.getDate();
       var month = date.getMonth() + 1;
       var year = date.getFullYear();
-      nameEl.innerHTML =
+      nameEl.innerHTML = "";
         data.name + " (" + month + "/" + day + "/" + year + ")";
       currentTempEl.innerHTML = "Temperature: " + data.main.temp + " &#176F";
-      currentHumidityEl.innerHTML = "Humidity: " + data.main.humidity + "%";
-      currentWindEl.innerHTML = "Wind: " + data.wind.speed + " mph";
       var weatherIcon = data.weather[0].icon;
       currentPicEl.setAttribute(
         "src",
@@ -85,15 +81,7 @@ function getWeather(cityName) {
             var forecastTemp = document.createElement("p");
             forecastTemp.innerHTML =
               "Temp: " + data.list[forecastIndex].main.temp + " &#176F";
-            forecastEl[i].append(forecastTemp);
-            var forecastHumidity = document.createElement("p");
-            forecastHumidity.innerHTML =
-              "Humidity: " + data.list[forecastIndex].main.humidity + "%";
-            forecastEl[i].append(forecastHumidity);
-            var forecastWind = document.createElement("p");
-            forecastWind.innerHTML =
-              "Wind: " + data.list[forecastIndex].wind.speed + " mph";
-            forecastEl[i].append(forecastWind);
+            forecastEl[i].append(forecastTemp);      
           }
         });
     });
