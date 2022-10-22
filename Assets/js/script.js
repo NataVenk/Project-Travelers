@@ -1,6 +1,6 @@
 //Elements for the Search bbox
-const searchInputEl = document.getElementById("searchInput");
-const locationInputEl = document.getElementById("locationInput");
+const eventSearchBtn = document.getElementById("eventSearchButton");
+
 
 //Location Query: City State Zipcode
 //Location Query: Zipcode
@@ -23,10 +23,15 @@ $.ajax({
   error: function(xhr, status, err) {
               // This time, we do not end up here!
            }
+});    
+}
+getApi();
+
+//Event Listener to get current data from the zipcode
+eventSearchBtn.addEventListener("click", function(){
+   getApi();
+   console.log(json);
 });
-    
-    }
-    getApi();
 
     
     
