@@ -2,14 +2,16 @@
 const eventSearchBtn = document.getElementById("eventSearchButton");
 
 
+
 //Location Query: City State Zipcode
 //Location Query: Zipcode
 var city = "";
 var state = "";
 var zipCode = "";
 
-function getApi() {
 
+
+function getApi() {
 $.ajax({
   type:"GET",
   url:"https://app.ticketmaster.com/discovery/v2/events.json?size=5&apikey=py0R2PUglpNwxG6m9eEMZ3w8mp4FGhRO&postalCode=10001",
@@ -18,20 +20,24 @@ $.ajax({
   success: function(json) {
               console.log(json);
               // Parse the response.
-              // Do other things.
+   document.getElementById('output').innerHTML = json;
            },
   error: function(xhr, status, err) {
               // This time, we do not end up here!
            }
 });    
 }
-getApi();
+
+
 
 //Event Listener to get current data from the zipcode
-eventSearchBtn.addEventListener("click", function(){
-   getApi();
-   console.log(json);
-});
+eventSearchBtn.addEventListener("click", getApi());
+
+// https://app.ticketmaster.com/discovery/v2/events.json?size=5&apikey=py0R2PUglpNwxG6m9eEMZ3w8mp4FGhRO&postalCode=10001
+//eventSearchBtn.addEventListener("click", getApi());
+
+
+
 
     
     
