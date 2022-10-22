@@ -146,20 +146,21 @@
             </div>
             </div>
 
-            <!-- Right slide -->
-            <div class="nav evel-right">
+            <!-- Right slide -->      
+        <div class="nav evel-right">
+            <div>
+                <h1 class="title">Find the weather</h1>
                 <div>
-                    <p class="adventureSearch is-5">
-                        <h1 class="title">Find the weather</h1>
-                        <input type="text" id="city-input" />
+                    <input type="text" id="city-input" />                    
+                    <div class="input-group-append">
                         <button type="button" id="weatherSearchButton">Search</button>
-                        <button type="button" id="clear-history">Clear history</button>
-                     </p>
+                    </div>
                 </div>
-                 <h2> Weather Results </h2>
-                 <form id="history"></form>
+                <button type="button" id="clear-history">Clear history</button>
+                <form id="history"></form>
             </div>
-                
+            <span id="city-name" class="city-name"></span>
+            <p id="temperature"></p>
 
         </nav>
 
