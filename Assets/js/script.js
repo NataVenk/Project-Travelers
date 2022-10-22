@@ -53,6 +53,5 @@ function searchHotel() {
 }
 
 //Ticket Master API information
-var url = "https://app.ticketmaster.com/discovery/v2/events";
-var API_KEY =
-  "py0R2PUglpNwxG6m9eEMZ3w8mp4FGhRO&postalCode=10001";
+var urlTicketMaster = "https://app.ticketmaster.com/discovery/v2/events";
+var API_KEY_TICKET_MASTER = "py0R2PUglpNwxG6m9eEMZ3w8mp4FGhRO&postalCode=10001";
