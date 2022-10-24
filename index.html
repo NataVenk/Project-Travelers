@@ -13,7 +13,8 @@
 
     <link href="Assets/css/style.css" rel="stylesheet" />
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <title>Eco Travelers</title>
 </head>
@@ -27,7 +28,8 @@
                 <!-- Left side -->
                 <div class="header-area level-left">
                     <div id="logo">
-                        <img class="logo" src="./assets/images/Travelers-leaf.png" alt="globe" width="200" height="200">
+                        <img class="logo" src="./assets/images/Travelers-leafnb.png" alt="globe" width="200"
+                            height="200">
 
 
                     </div>
@@ -54,50 +56,33 @@
     </nav>
 
 
+    <!-- style notes - nav options should be in-line , aligned to the right, background color - solid -->
+    </header>
+
+
+    <div class="picContainer">
+
+
+
+        <section>
+            <div class="container">
+
+                <figure class="image is-2by1">
+
+                    <img src="./Assets/images/hotel1.jpg">
+                    <div class="rightM">Live </div>
+                    <div class="rightM2"> Your </div>
+                    <div class="rightM3">Life </div>
+                    <div class="rightM4"> Anywhere</div>
+
+
+                </figure>
+            </div>
         </section>
 
 
-        
+        <section class="searchBar">
 
-    <!-- style notes - nav options should be in-line , aligned to the right, background color - solid -->
-    </header>
-    <div class="picContainer">
-
-            </figure>
-
-        <section>
-
-            <figure class="image is-2by1">
-
-                <img src="./Assets/images/hotel1.jpg">
-
-            </figure>
-
-    <section class="searchBar">
-
-    <!-- <section class="searchBar block is-large">
-        <nav class="level">
-            Left side -->
-            <!-- <div class="level-left">
-                <div class="level-item">
-                    <p class="searchBar is-5">
-                    <h1 class="title">Search Bar</h1>
-                    </p>
-                </div>
-
-            </div>
-            </div>
-
-            Right slide -->
-            <!-- <div class="nav evel-right">
-                <div class="field has-addons">
-                    <p> </p> <strong>Destination</strong>
-                    <input type="text" id="citySearch" />
-                    <button type="button" id="searchButton">Search</button>
-
-                    <p> </p> <strong>Activity</strong>
-                    <input type="text" id="activity" />
-                    <button type="button" id="searchButton">Search</button> -->
 
                 <!-- </div> -->
 
@@ -111,94 +96,123 @@
             <p></p> <strong></strong>Our mission in to facilitate travel planning that lightens your footprint on the environment--Live life guilt free</p>
           </div>
 
-    </section>
-    
+            </section>
+    </div>
+
 
     <section class="hotelSearch block is-large">
         <nav class="level">
             <!-- Left side -->
-            <div class="level-left">
-                <div class="level-item">
-                    <p class="hotelSearch is-5">
+            <div class="level-item">
+                <div class="level-item has-text-centered">
+                    <p class="hotelSearch is-8">
+
                     <h1 class="title">Hotel Search</h1>
-                    <input type="text" id="hotelZipcode" />
+                    <input type="text" placeholder="City, State OR zipcode" id="hotelZipcode" />
+
                     <button type="button" id="searchButton" onclick="searchHotel()">Search</button>
                     </p>
+
+
                 </div>
 
             </div>
-            </div>
+
 
             <!-- Right slide -->
-            <div class="nav evel-right">
+            <div class="level-item">
                 <div class="field has-addons">
-                    <div id="logo">
-                        <img class="logo" src="./assets/images/norway-24.jpg" alt="harbor" width="200" height="200">
-
-
+                    <div id="harbor">
+                        <img class="harbor" src="./assets/images/norway-24.jpg" alt="harbor" width="400" height="200">
                     </div>
+
 
                 </div>
 
-        </nav>
+            </div>
+
+
 
 
     </section>
 
-    <section class="adventurSearch block is-large">
+    <section class="adventureSearch block is-large">
         <nav class="level">
             <!-- Left side -->
-            <div class="level-left">
-                <div class="level-item">
-                    <div class="field has-addons">
-                        <div id="logo">
-                            <img class="logo" src="./assets/images/milan-shop.png" alt="shopping" width="200" height="200">
-                        </div>
-    
-                    </div>
-    
 
-                   
-                </div>
-
-            </div>
-            </div>
-
-            <!-- Right slide -->      
-        <div class="nav evel-right">
-            <div>
-                <h1 class="title">Find the weather</h1>
+            <div class="level-item">
                 <div>
-                    <input type="text" id="city-input" />                    
-                    <div class="input-group-append">
-                        <button type="button" id="weatherSearchButton">Search</button>
+                    <div class="level-left">
+                        <div class="card level-item has-text-centered">
+                            <div class="card-content">
+                                <div class="content">
+
+
+                                    <h1 class="title">Weather at Your Destination</h1>
+
+                                    <input type="text" placeholder="City, State OR zipcode" id="city-input" />
+                                    <div class="input-group-append">
+                                        <button type="button" id="weatherSearchButton">Search</button>
+                                    </div>
+                                    <h3> Search history </h3>
+                                <form id="history"></form>
+                                <button type="button" id="clear-history">Clear history</button>
+
+
+                                <h3> Results</h3>
+
+
+                                <span id="city-name" class="city-name"></span>
+                                <p id="temperature"></p>
+
+                                </div>
+
+                                <!-- <h3> Search history </h3>
+                                <form id="history"></form>
+                                <button type="button" id="clear-history">Clear history</button>
+
+
+                                <h3> Results</h3>
+
+
+                                <span id="city-name" class="city-name"></span>
+                                <p id="temperature"></p> -->
+
+                            </div>
+
+                        </div>
+
                     </div>
-                </div>
-                <button type="button" id="clear-history">Clear history</button>
-                <form id="history"></form>
-            </div>
-            <span id="city-name" class="city-name"></span>
-            <p id="temperature"></p>
 
         </nav>
-
-
     </section>
-    
 
 
-    
+    </div>
 
-    <h2> Search Results </h2>
-    <section id="searchResults"></section>
+
+
+    <div id="searchDisplay" class="level-item">
+
+        <h2> Search Results </h2>
+        <section id="searchResults">
+
+
+
+        </section>
+
+    </div>
 
 
 
     <section class=Footer>
+        <div class="content has-text-centered">
 
-        <h2> Find us at: </h2>
+            <h2> Find us at: </h2>
 
-        <p> travelers@traveler.com p: 888-333-4422 123 MAIN STREET NY, NY 012345</p>
+            <p> travelers@traveler.com p: 888-333-4422 123 MAIN STREET NY, NY 012345</p>
+
+        </div>
         <!-- style notes : solid color background, text aligned to left  -->
 
     </section>
