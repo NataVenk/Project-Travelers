@@ -37,6 +37,48 @@ h1{
     
      
         } 
+
+.container {
+            position: relative;
+            text-align: center;
+            
+          }
+.rightM{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 65px;
+    text-decoration;
+    position: absolute;
+    bottom: 400px;
+    right: 175px;
+    color:#22333b;
+}
+.rightM2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 65px;
+    text-decoration;
+    position: absolute;
+    bottom: 325px;
+    right: 175px;
+    color:#22333b;
+}
+.rightM3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 65px;
+    text-decoration;
+    position: absolute;
+    bottom: 250px;
+    right: 175px;
+    color:#22333b;
+}
+.rightM4{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 65px;
+    text-decoration;
+    position: absolute;
+    bottom: 175px;
+    right: 175px;
+    color:#22333b;
+}
 .textArea{
     color: black transparent;
 }
