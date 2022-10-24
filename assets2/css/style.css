@@ -82,7 +82,7 @@ h2{
 }
 
 header {
-    background-image: linear-gradient(to bottom right, rgb(30, 59, 88),  antiquewhite;);
+    background-image: linear-gradient(to bottom right, rgb(30, 59, 88),  antiquewhite);
 
 }
 .adventureSearch {
@@ -150,8 +150,25 @@ h3{
     opacity: 50%;
     cursor: pointer;
   }
-  
 
+  #missionState{
+    margin-bottom: 20px;
+  }
+
+  #missionStatement{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 10px;
+    
+  }
+
+  #searchResults{
+    display: block;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
         /*set parameters for responive pages on different devices*/
         @media screen and (max-width: 1200px) {
             header {
