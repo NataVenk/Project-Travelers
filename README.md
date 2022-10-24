@@ -21,4 +21,4 @@ git checkout -b "Name of your branch"
 ## Wireframe
 The following image demonstrates the web application's Wireframe layout:
 
-![Note: This layout is designed for desktop viewing, you may notice that some of the elements don't look exactly like the mock-up at a resolution smaller than 768px.](./Assets/images/wireFrame.png)
+![Note: This layout is designed for desktop viewing, you may notice that some of the elements don't look exactly like the mock-up at a resolution smaller than 768px.](./assets/images/wireFrame.png)
