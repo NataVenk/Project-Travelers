@@ -15,27 +15,28 @@ body {
 
 }
 
+
+
 /* #486572; - color of the globe */
 h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 65px;
-        color:   #486572;
+    color:   #486572;
 
  
     } 
-    .nav{
+.nav{
         justify-content: center;
     }
-    .seacrhBar{
+.seacrhBar{
         display: flex;
         justify-content: space-around;
     }
-    h2{
+h2{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 45px;
             color:   #486572;
     
-     
         } 
 
 .container {
@@ -46,7 +47,7 @@ h1{
 .rightM{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 65px;
-    text-decoration;
+
     position: absolute;
     bottom: 400px;
     right: 175px;
@@ -55,7 +56,6 @@ h1{
 .rightM2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 65px;
-    text-decoration;
     position: absolute;
     bottom: 325px;
     right: 175px;
@@ -64,7 +64,6 @@ h1{
 .rightM3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 65px;
-    text-decoration;
     position: absolute;
     bottom: 250px;
     right: 175px;
@@ -73,19 +72,42 @@ h1{
 .rightM4{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 65px;
-    text-decoration;
     position: absolute;
     bottom: 175px;
     right: 175px;
     color:#22333b;
 }
 .textArea{
-    color: black transparent;
+    color: black ;
 }
 
 header {
     background-image: linear-gradient(to bottom right, rgb(30, 59, 88),  antiquewhite;);
 
+}
+.adventureSearch {
+    background-image: url("../images/winter.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    
+    
+
+
+}
+h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: #486572;
+
+}
+.card{
+  
+    bottom: 0px;
+    right: 300px;
+
+  
 }
 .nav-list {
     display: flex;
@@ -165,3 +187,5 @@ header {
                     background-color: rgb(71, 116, 117);
                 }
             }
+
+

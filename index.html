@@ -28,7 +28,8 @@
                 <!-- Left side -->
                 <div class="header-area level-left">
                     <div id="logo">
-                        <img class="logo" src="./assets/images/Travelers-leafnb.png" alt="globe" width="200" height="200">
+                        <img class="logo" src="./assets/images/Travelers-leafnb.png" alt="globe" width="200"
+                            height="200">
 
 
                     </div>
@@ -54,24 +55,24 @@
 
 
     <!-- style notes - nav options should be in-line , aligned to the right, background color - solid -->
-</header>
+    </header>
 
 
     <div class="picContainer">
 
-    
+
 
         <section>
             <div class="container">
 
                 <figure class="image is-2by1">
-                   
+
                     <img src="./Assets/images/hotel1.jpg">
                     <div class="rightM">Live </div>
-                    <div class="rightM2">  Your </div>
+                    <div class="rightM2"> Your </div>
                     <div class="rightM3">Life </div>
                     <div class="rightM4"> Anywhere</div>
-                    
+
 
                 </figure>
             </div>
@@ -80,7 +81,7 @@
 
         <section class="searchBar">
 
-            
+
             <section id="missionState">
                 <div class="block">
                     <h2 id="missionStatement"> This is Us</h2>
@@ -89,107 +90,128 @@
                     turpis.</p>
                 </div>
 
-        </section>
-    </div>
-
-
-            <section class="hotelSearch block is-large">
-                <nav class="level">
-                    <!-- Left side -->
-                    <div class="level-item">
-                        <div class="level-item has-text-centered">
-                            <p class="hotelSearch is-8">
-                            <h1 class="title">Hotel Search</h1>
-                            <input type="text" placeholder="City, State OR zipcode" id="hotelZipcode" />
-                            <button type="button" id="searchButton" onclick="searchHotel()">Search</button>
-                            </p>
-                        </div>
-
-                    </div>
-    
-
-                        <!-- Right slide -->
-                    <div class="level-item">
-                         <div class="field has-addons">
-                            <div id="harbor">
-                            <img class="harbor" src="./assets/images/norway-24.jpg" alt="harbor" width="400" height="200">
-                            </div>
-
-
-                         </div>
-
-                     </div>
-
-        
-
-
             </section>
-
-        <section class="adventurSearch block is-large">
-            <nav class="level">
-                <!-- Left side -->
-                
-                    <div class="level-item">
-                        <div class="field has-addons">
-                            <div id="logo">
-                                <img class="logo" src="./assets/images/milan-shop.png" alt="shopping" width="200"
-                                    height="200">
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!-- Right slide -->
-                    <div class="level-item">
-                        <div class="level-rigth">
-                        
-                            <h1 class="title">Weather at Your Destination</h1>
-                            <div>
-                                <input type="text" id="city-input" />
-                                <div class="input-group-append">
-                                    <button type="button" id="weatherSearchButton">Search</button>
-                                </div>
-                            </div>
-                            <button type="button" id="clear-history">Clear history</button>
-                            <form id="history"></form>
-
-                            <span id="city-name" class="city-name"></span>
-                            <p id="temperature"></p>
-
-                        </div>
-
-                    </div>
-
-            </nav>
-        </section>          
-
-                
     </div>
 
 
-        
-<div id = "searchDisplay" class = "level-item">
+    <section class="hotelSearch block is-large">
+        <nav class="level">
+            <!-- Left side -->
+            <div class="level-item">
+                <div class="level-item has-text-centered">
+                    <p class="hotelSearch is-8">
 
-            <h2> Search Results </h2>
-            <section id="searchResults"></section>
+                    <h1 class="title">Hotel Search</h1>
+                    <input type="text" placeholder="City, State OR zipcode" id="hotelZipcode" />
 
-        </div>
+                    <button type="button" id="searchButton" onclick="searchHotel()">Search</button>
+                    </p>
 
-
-
-            <section class=Footer>
-                <div class="content has-text-centered">
-
-                    <h2> Find us at: </h2>
-
-                    <p> travelers@traveler.com p: 888-333-4422 123 MAIN STREET NY, NY 012345</p>
 
                 </div>
-                <!-- style notes : solid color background, text aligned to left  -->
 
-            </section>
-<script src="./assets/js/weather.js"></script>
-<script src="./assets/js/script.js"></script>
-    </body>
+            </div>
+
+
+            <!-- Right slide -->
+            <div class="level-item">
+                <div class="field has-addons">
+                    <div id="harbor">
+                        <img class="harbor" src="./assets/images/norway-24.jpg" alt="harbor" width="400" height="200">
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+    </section>
+
+    <section class="adventureSearch block is-large">
+        <nav class="level">
+            <!-- Left side -->
+
+            <div class="level-item">
+                <div>
+                    <div class="level-left">
+                        <div class="card level-item has-text-centered">
+                            <div class="card-content">
+                                <div class="content">
+
+
+                                    <h1 class="title">Weather at Your Destination</h1>
+
+                                    <input type="text" placeholder="City, State OR zipcode" id="city-input" />
+                                    <div class="input-group-append">
+                                        <button type="button" id="weatherSearchButton">Search</button>
+                                    </div>
+                                    <h3> Search history </h3>
+                                <form id="history"></form>
+                                <button type="button" id="clear-history">Clear history</button>
+
+
+                                <h3> Results</h3>
+
+
+                                <span id="city-name" class="city-name"></span>
+                                <p id="temperature"></p>
+
+                                </div>
+
+                                <!-- <h3> Search history </h3>
+                                <form id="history"></form>
+                                <button type="button" id="clear-history">Clear history</button>
+
+
+                                <h3> Results</h3>
+
+
+                                <span id="city-name" class="city-name"></span>
+                                <p id="temperature"></p> -->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+        </nav>
+    </section>
+
+
+    </div>
+
+
+
+    <div id="searchDisplay" class="level-item">
+
+        <h2> Search Results </h2>
+        <section id="searchResults">
+
+
+
+        </section>
+
+    </div>
+
+
+
+    <section class=Footer>
+        <div class="content has-text-centered">
+
+            <h2> Find us at: </h2>
+
+            <p> travelers@traveler.com p: 888-333-4422 123 MAIN STREET NY, NY 012345</p>
+
+        </div>
+        <!-- style notes : solid color background, text aligned to left  -->
+
+    </section>
+    <script src="./assets/js/weather.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
 
 </html>
