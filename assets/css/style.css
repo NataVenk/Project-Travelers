@@ -44,45 +44,47 @@ h2{
             text-align: center;
             
           }
-.rightM{
+.logo{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 65px;
+    color:#22333b;
+    right: 175px;
 
+}
+#rightM{
+   
     position: absolute;
     bottom: 400px;
-    right: 175px;
-    color:#22333b;
+   
+  
 }
-.rightM2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 65px;
+#rightM2{
+
     position: absolute;
     bottom: 325px;
-    right: 175px;
-    color:#22333b;
+   
+    
 }
-.rightM3{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 65px;
+#rightM3{
+   
     position: absolute;
     bottom: 250px;
-    right: 175px;
-    color:#22333b;
+   
+    
 }
-.rightM4{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 65px;
+#rightM4{
+  
     position: absolute;
     bottom: 175px;
-    right: 175px;
-    color:#22333b;
+   
+  
 }
 .textArea{
     color: black ;
 }
 
 header {
-    background-image: linear-gradient(to bottom right, rgb(30, 59, 88),  antiquewhite);
+    background-image:   antiquewhite;
 
 }
 .adventureSearch {
@@ -204,5 +206,60 @@ h3{
                     background-color: rgb(71, 116, 117);
                 }
             }
+            @media screen and (max-width: 850px){
+
+                .card{
+                    bottom: 0px;
+                    right: 0px;
+
+
+                }
+            }
+            @media screen and (max-width: 992px){
+                .logo{
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-size: 35px;
+                    color:#22333b;
+                    right: 125px;
+
+                }
+                
+              
+                #rightM{
+   
+                    position: absolute;
+                    bottom: 190px;
+               
+                }
+
+            @media screen and (max-width: 992px){
+                    #rightM2{
+       
+                        position: absolute;
+                        bottom: 160px;
+                   
+                    }
+            @media screen and (max-width: 992px){
+                        #rightM3{
+           
+                            position: absolute;
+                            bottom: 130px;
+                       
+                        }
+            @media screen and (max-width: 992px){
+                            #rightM4{
+               
+                                position: absolute;
+                                bottom: 100px;
+                           
+                            }
+
+                        }
+
+            
+
+
+
+
 
 
