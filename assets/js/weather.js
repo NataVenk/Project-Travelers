@@ -10,14 +10,19 @@ const currentTempEl = document.getElementById("temperature");
 const currentHumidityEl = document.getElementById("humidity");
 const currentWindEl = document.getElementById("wind-speed");
 const historyEl = document.getElementById("history");
+var stateName = "";
 let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
 var apiKey = "b7b48ac454a09b19bb30a881b0b84d9d";
+
+
+
+https://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={API key}
 
 function getWeather(cityName) {
   //I need to know what is this line and from where we get it?
   var query =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
-    cityName +
+    cityName + 
     "&appid=" +
     apiKey +
     "&units=imperial";
@@ -36,14 +41,14 @@ function getWeather(cityName) {
       nameEl.innerHTML =
         data.name + " (" + month + "/" + day + "/" + year + ")";
       currentTempEl.innerHTML = "Temperature: " + data.main.temp + " &#176F";
-      currentHumidityEl.innerHTML = "Humidity: " + data.main.humidity + "%";
-      currentWindEl.innerHTML = "Wind: " + data.wind.speed + " mph";
-      var weatherIcon = data.weather[0].icon;
-      currentPicEl.setAttribute(
-        "src",
-        "https://openweathermap.org/img/wn/" + weatherIcon + "@2x.png"
-      );
-      currentPicEl.setAttribute("alt", data.weather[0].description);
+      //currentHumidityEl.innerHTML = "Humidity: " + data.main.humidity + "%";
+      //currentWindEl.innerHTML = "Wind: " + data.wind.speed + " mph";
+      // var weatherIcon = data.weather[0].icon;
+      // currentPicEl.setAttribute(
+      //   "src",
+      //   "https://openweathermap.org/img/wn/" + weatherIcon + "@2x.png"
+      // );
+      //currentPicEl.setAttribute("alt", data.weather[0].description);
       var cityId = data.id;
       var forecastUrl =
         "https://api.openweathermap.org/data/2.5/forecast?id=" +
@@ -106,6 +111,9 @@ searchEl.addEventListener("click", function () {
   renderSearchHistory();
   getWeather(cityName);
 });
+
+
+
 
 clearEl.addEventListener("click", function () {
   searchHistory = [];
